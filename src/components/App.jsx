@@ -24,10 +24,7 @@ export class App extends Component {
     e.preventDefault();
     this.setState({ isLoading: true });
     const inputForSearch = e.target.elements.inputForSearch;
-    if (inputForSearch.value.trim() === '') {
-      return;
-    }
-  
+   
     const response = await fetchImages(inputForSearch.value, 1);
     this.setState({
       images: response,
