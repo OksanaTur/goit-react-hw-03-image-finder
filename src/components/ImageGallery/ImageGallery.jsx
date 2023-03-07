@@ -6,17 +6,16 @@ export const ImageGallery = ({ images, onImageClick }) => (
     <GalleryList>
         {images.map((image, index) => (
             <ImageGalleryItem
-                onClick={onImageClick} image={image} key={index}
-            />
+                onclick={onImageClick} image={image} key={index} />
         ))}
     </GalleryList>
 );
 
 ImageGallery.propTypes = {
-    images: propTypes.arrayOf(
-        propTypes.shape({
-            id:propTypes.number.isRequired
-        })
-    ),
-    onImageClick:propTypes.func.isRequired,
-}
+  images: propTypes.arrayOf(
+    propTypes.shape({
+      id: propTypes.number.isRequired,
+    })
+  ),
+  onImageClick: propTypes.func.isRequired,
+};

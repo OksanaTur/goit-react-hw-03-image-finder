@@ -9,7 +9,8 @@ export const Searchbar = ({ onSubmit }) => (
       <SearchFormBtnLabel>Search</SearchFormBtnLabel>
     </SearchFormBtn>
 
-    <SearchFormInput
+      <SearchFormInput
+      name="inputForSearch"
       type="text"
       autoComplete="off"
       autoFocus

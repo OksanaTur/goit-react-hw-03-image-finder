@@ -10,7 +10,7 @@ export const Modal = ({ src, alt, handleClose }) => (
 );
 
 Modal.propTypes = {
-    src: propTypes.string.isRequired,
-    alt: propTypes.string.isRequired,
-    handleClose: propTypes.func.isRequired,
-}
+  src: propTypes.string.isRequired,
+  alt: propTypes.string.isRequired,
+  handleClose: propTypes.func.isRequired,
+};
